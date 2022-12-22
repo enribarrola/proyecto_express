@@ -1,8 +1,8 @@
 import app from "./app.js";
 
 async function main() {
-  app.listen(4000);
-  console.log("Server on port 4000");
+  app.listen(3333);
+  console.log("Server on port 3333");
 }
 
 main();
