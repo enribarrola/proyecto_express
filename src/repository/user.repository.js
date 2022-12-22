@@ -4,18 +4,19 @@ import * as dotenv from 'dotenv'
 dotenv.config()
 //import  dateFormat from 'dateformat';
 
-const client = new Client({
+/* const client = new Client({
     user: process.env.APP_DB_USER,
     host: process.env.APP_DB_HOST,
     database: process.env.APP_DB_DATABASE,
     password: process.env.APP_DB_PASSWORD,
     port: process.env.APP_DB_PORT,
 })
-client.connect()
+client.connect() */
 
 
 export const nuevaPreventaE = async (data) => {
     try {
+        return "hola"
         const {
             fecha, id_vendedor, id_cliente, idprospecto, observ, ult_modif,
             ofertas, intereses, estado, id_area, id_usuario, cant_dets, cliente,
@@ -58,6 +59,7 @@ export const nuevaPreventaE = async (data) => {
 }
 
 export const preventaResumen = async () => {
+        return "hola"
         const res = await client.query(`select * from rtp.bp_movimientos limit 0`)
         return res.rows
     }
